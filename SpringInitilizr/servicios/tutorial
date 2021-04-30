@@ -1,0 +1,8 @@
+/**TUTORIAL COMO CREA RUN PROYECTO CON SPRING INITIALIZR*/
+
+/**se puede importar un proyecto rapidamente. se va a la pagina https://start.spring.io/ y se crea uin proyecto maven. */
+/** se importa el proyecto en una carpeta aparte click derecho/import/MAven project*/
+/**El crea todo lo basico para tener una app de consola funcional*/
+
+/**para el ejerccio*/
+1. creo la clase servicio

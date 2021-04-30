@@ -1,0 +1,15 @@
+/**En este archivo quedan los pasos escritos para crear un proyecto spirng desde cero sin las ayudas de spring framework*/
+1. crear el artefacto base.
+	en la carpeta del proyecto: new/project/maven project/create a simple project/ se configura el group id y el artifact id
+2. configurar el pom del proyecto
+	2.1. inserto el plugin maven para que el proyecto funcione con el jdk 8. buscarlo en maven.apache.org"maven-compiler-plugin"
+	ref : https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+	2.2. traer de maven repository spring core
+	2.3. spring-context
+3. ver la construccion de proyercto que se creo en el package com.arquitecturajava.com. En el se meustra como se crea un proyecgo con sus 3 clases principales.
+	configurador de anitaciones SpringConfigurador
+	StringMain: cliente 
+	Servicio: clase o bean de logica de negocio, solo saluda
+
+
+	
