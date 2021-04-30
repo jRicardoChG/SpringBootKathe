@@ -34,10 +34,7 @@ public class ServiciosApplication implements CommandLineRunner {
 		 * */
 		SpringApplication.run(ServiciosApplication.class, args);
 		miEjemplo();
-		
-		
 	}
-
 
 	/**
 	 * ejemplo usando command line par acorer la aplciacion de linea de comandos
@@ -53,9 +50,12 @@ public class ServiciosApplication implements CommandLineRunner {
 		LOG.info(saludo);
 	}
 	
+	/**
+	 * un metodo sin usar todas las caracteristicas de SpringBoot
+	 */
 	public static void miEjemplo()
 	{
-//		miServicio no se puede usar
+		/**miServicio no se puede usar*/
 		Servicio miServicio2 = new Servicio();
 		miServicio2.setSaludo("Kathe");
 		String saludo = miServicio2.mensaje(); 
