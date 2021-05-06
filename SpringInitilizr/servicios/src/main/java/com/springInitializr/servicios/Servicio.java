@@ -1,5 +1,7 @@
 package com.springInitializr.servicios;
 
+import java.io.Serializable;
+
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,8 +11,9 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class Servicio {
+public class Servicio implements Serializable{
 
+	private static final long serialVersionUID = 1L;
 	private String saludo;
 	
 	public String mensaje() {

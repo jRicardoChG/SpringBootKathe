@@ -1,0 +1,20 @@
+/**En este tutoria se explica como crear el projecto mvc solito sin ayuda del framework*/
+1. se crea un projecto maven tipico normal, pero el packege se crea de tipo war y no jar
+2. El proyecto sale con errores asi que falta poner las dependendicas
+	se ponen las dependencias indicaas en el pom
+3. En este caso se usa el pugin con el tag <failOnMissingWebXml>false<failOnMissingWebXml>, para que no genere los errores por no tener archivo web-inf
+4. copiamos las dependencias de spring core y context en el area de dependencies y del repositorio maven salcamos las de springwebmvc, servlet api, jstl
+5. descargamos un server, en este caso se usa tomcat
+
+/**la configuracion basica es:*/
+
+1. SpringWebInitializer:
+	- Clase que permite registrar un servlet 
+	- leer la configuracion de spring SpringConfigutrator
+2. SpringConfigurator: 
+	- Configura un ViewResolver dado uqe se usanran vistas de aplicacion web jsp.
+	- Lee con un component scan las clases tipo Servicio que se definan en el proyecto. 
+	- Configura los Beans
+	
+3. crear el primer controlador de vistas
+4. crear carpeta de vistas y fichero vista jsp
