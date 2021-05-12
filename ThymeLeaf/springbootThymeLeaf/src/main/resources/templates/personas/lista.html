@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista Personas</title>
+</head>
+
+<body>
+    <table>
+        <!-- th:each es cmo un for apra recorrer el modelo que se carga desde el controlador java, el objeto es lista -->
+        <tr th:each="persona:${lista}">
+            <td th:text="${persona.nombre}"></td>
+            <td th:text="${persona.apellidos}"></td>
+            <td th:text="${persona.edad}"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
